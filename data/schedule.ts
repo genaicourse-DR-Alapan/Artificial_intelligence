@@ -1,0 +1,86 @@
+export const schedule = [
+  {
+    week: 1,
+    title: "Introduction to Artificial Intelligence",
+    topics: "History of AI, Philosophy of AI, Definitions and Applications",
+    slides: "Week 1 Slides",
+  },
+  {
+    week: 2,
+    title: "Agents & Problem Formulation",
+    topics: "Intelligent Agents, PEAS, Environment Types, State Space Representation",
+    slides: "Week 2 Slides",
+  },
+  {
+    week: 3,
+    title: "Uninformed Search",
+    topics: "BFS, DFS, DLS, IDS, Uniform Cost Search",
+    slides: "Week 3 Slides",
+  },
+  {
+    week: 4,
+    title: "Informed Search",
+    topics: "Greedy Search, A*, Heuristics",
+    slides: "Week 4 Slides",
+  },
+  {
+    week: 5,
+    title: "Local Search",
+    topics: "Hill Climbing, Simulated Annealing, Genetic Algorithms",
+    slides: "Week 5 Slides",
+  },
+  {
+    week: 6,
+    title: "Adversarial Search",
+    topics: "Games, Minimax, Alpha-Beta Pruning",
+    slides: "Week 6 Slides",
+  },
+  {
+    week: 7,
+    title: "Constraint Satisfaction",
+    topics: "CSP, Backtracking, Arc Consistency",
+    slides: "Week 7 Slides",
+  },
+  {
+    week: 8,
+    title: "Probability",
+    topics: "Probability Review, Bayes Theorem",
+    slides: "Week 8 Slides",
+  },
+  {
+    week: 9,
+    title: "Bayesian Networks",
+    topics: "Conditional Independence, Inference, Sampling",
+    slides: "Week 9 Slides",
+  },
+  {
+    week: 10,
+    title: "Decision Theory",
+    topics: "Utility, Decision Networks",
+    slides: "Week 10 Slides",
+  },
+  {
+    week: 11,
+    title: "Markov Decision Processes",
+    topics: "Bellman Equations, Policy Evaluation, Value Iteration",
+    slides: "Week 11 Slides",
+  },
+  {
+    week: 12,
+    title: "Reinforcement Learning",
+    topics: "Monte Carlo, TD Learning, Q-Learning, SARSA",
+    slides: "Week 12 Slides",
+  },
+  {
+    week: 13,
+    title: "Deep Learning & Deep RL",
+    topics: "Perceptron, MLP, CNN, RNN, DQN, Actor-Critic",
+    slides: "Week 13 Slides",
+  },
+  {
+    week: 14,
+    title: "LLMs, Ethics & Revision",
+    topics: "Transformers, Large Language Models, Responsible AI, Revision",
+    slides: "Week 14 Slides",
+  },
+];
