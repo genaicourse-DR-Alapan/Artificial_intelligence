@@ -3,7 +3,7 @@ import { CalendarDays, FileText } from "lucide-react";
 
 export default function WeeklyTimeline() {
   return (
-    <section className="bg-slate-50 py-28">
+    <section  id="schedule" className="bg-slate-50 py-28">
       <div className="mx-auto max-w-[1400px] px-6">
 
         <div className="mb-16 text-center">

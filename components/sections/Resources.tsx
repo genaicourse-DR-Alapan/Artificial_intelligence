@@ -3,7 +3,7 @@ import { BookOpen, Laptop, Download } from "lucide-react";
 
 export default function Resources() {
   return (
-    <section className="bg-slate-50 py-28">
+    <section id="resources" className="bg-slate-50 py-28">
 
       <div className="mx-auto max-w-7xl px-6">
 
@@ -146,6 +146,84 @@ export default function Resources() {
               Assignment Sheet
 
             </button>
+
+          </div>
+
+        </div>
+                {/* ================= Academic Integrity ================= */}
+
+        <div className="mt-24">
+
+          <div className="rounded-3xl border border-red-200 bg-red-50 p-10 shadow-sm">
+
+            <h2 className="text-3xl font-bold text-red-700">
+              Academic Integrity
+            </h2>
+
+            <p className="mt-6 leading-8 text-slate-700">
+              Attendance for the course shall be governed by the institute's rules and regulations.
+              Collaboration is encouraged, as discussing ideas with classmates is an effective way to
+              learn. However, every submission must represent your own understanding and effort.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              Any form of plagiarism, unauthorized copying, or submission of another person's work
+              as your own will be considered academic misconduct.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              If you collaborate with classmates, you must explicitly acknowledge their names in
+              your submission. Likewise, if you receive significant help from any external source,
+              it should also be acknowledged appropriately.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              Failure to follow these principles may result in negative marks, reporting under the
+              institute's Academic Integrity Policy, course deregistration, or disciplinary action,
+              depending on the severity of the violation.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* ================= LLM Policy ================= */}
+
+        <div className="mt-10">
+
+          <div className="rounded-3xl border border-blue-200 bg-blue-50 p-10 shadow-sm">
+
+            <h2 className="text-3xl font-bold text-blue-700">
+              LLM Use Policy
+            </h2>
+
+            <p className="mt-6 leading-8 text-slate-700">
+              For this course, a Large Language Model (LLM) is considered another student in the
+              class and an open book. Students are encouraged to use AI tools to understand concepts,
+              build intuition, brainstorm ideas, critique approaches, learn programming syntax,
+              and assist with debugging.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              However, AI-generated code, reports, solutions, or any other content must not be
+              submitted as your own work. Instead, use AI to support your learning and produce
+              your own original solution.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              Whenever an LLM or any AI tool is used, its use must be explicitly disclosed in your
+              submission, just as you would acknowledge a human collaborator or any external resource.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              During evaluation, you should be able to explain every line of code, every design
+              decision, and every written statement included in your submission.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-700">
+              Failure to comply with these rules will be treated as academic misconduct in accordance
+              with the institute's Academic Integrity guidelines.
+            </p>
 
           </div>
 

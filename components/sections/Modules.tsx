@@ -8,7 +8,7 @@ export default function Modules() {
   const [openModule, setOpenModule] = useState<number | null>(0);
 
   return (
-    <section className="bg-white py-28">
+    <section id="syllabus" className="bg-white py-28">
       <div className="mx-auto max-w-6xl px-6">
 
         <div className="mb-16 text-center">

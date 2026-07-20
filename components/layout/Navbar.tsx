@@ -34,19 +34,19 @@ export default function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8">
 
-          <Link href="/">Home</Link>
+        <Link href="/">Home</Link>
 
-          <Link href="/syllabus">Syllabus</Link>
+        <Link href="#syllabus">Syllabus</Link>
 
-          <Link href="/schedule">Schedule</Link>
+        <Link href="#schedule">Schedule</Link>
 
-          <Link href="/lectures">Lectures</Link>
+        <Link href="#lectures">Lectures</Link>
 
-          <Link href="/resources">Resources</Link>
+        <Link href="#resources">Resources</Link>
 
-          <Link href="/contact">Contact</Link>
+        <Link href="#contact">Contact</Link>
 
-        </nav>
+      </nav>
 
         {/* Right */}
 

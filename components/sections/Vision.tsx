@@ -1,73 +1,41 @@
-import { Eye, Target } from "lucide-react";
+import { Target } from "lucide-react";
 
 export default function Vision() {
   return (
-    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 py-28 text-white">
-      <div className="mx-auto max-w-[1400px] px-6">
+    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 py-24 text-white">
+      <div className="mx-auto max-w-5xl px-6">
 
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="rounded-3xl bg-white/10 p-10 backdrop-blur-md">
 
-          {/* Vision */}
-
-          <div className="rounded-3xl bg-white/10 p-10 backdrop-blur-md">
-
-            <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500">
-
-              <Eye size={34} />
-
-            </div>
-
-            <h2 className="text-4xl font-bold">
-              Course Vision
-            </h2>
-
-            <p className="mt-6 text-lg leading-9 text-slate-200">
-
-              This course introduces students to the foundations of
-              Artificial Intelligence while preparing them to understand
-              modern AI systems such as Deep Learning, Transformers and
-              Large Language Models.
-
-              Students will develop both theoretical understanding and
-              practical implementation skills.
-
-            </p>
-
+          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500">
+            <Target size={34} />
           </div>
 
-          {/* Objectives */}
+          <p className="font-semibold uppercase tracking-[0.3em] text-blue-300">
+            Course Objectives
+          </p>
 
-          <div className="rounded-3xl bg-white/10 p-10 backdrop-blur-md">
+          <h2 className="mt-4 text-5xl font-bold">
+            What This Course Aims to Teach
+          </h2>
 
-            <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500">
+          <ul className="mt-10 space-y-5 text-lg leading-8 text-slate-200">
 
-              <Target size={34} />
+            <li>✓ Understand intelligent agents and rational decision making.</li>
 
-            </div>
+            <li>✓ Learn classical search and heuristic search algorithms.</li>
 
-            <h2 className="text-4xl font-bold">
+            <li>✓ Solve game-playing and constraint satisfaction problems.</li>
 
-              Course Objectives
+            <li>✓ Apply probabilistic reasoning using Bayesian Networks.</li>
 
-            </h2>
+            <li>✓ Understand Markov Decision Processes and Reinforcement Learning.</li>
 
-            <ul className="mt-8 space-y-5 text-lg leading-8 text-slate-200">
+            <li>✓ Explore modern AI including Deep Learning, Transformers and Large Language Models.</li>
 
-              <li>✓ Understand intelligent agents and search.</li>
+            <li>✓ Learn the importance of Responsible AI and AI Safety.</li>
 
-              <li>✓ Learn problem solving techniques.</li>
-
-              <li>✓ Study probabilistic reasoning.</li>
-
-              <li>✓ Implement reinforcement learning algorithms.</li>
-
-              <li>✓ Understand deep learning fundamentals.</li>
-
-              <li>✓ Explore Transformers & Large Language Models.</li>
-
-            </ul>
-
-          </div>
+          </ul>
 
         </div>
 
