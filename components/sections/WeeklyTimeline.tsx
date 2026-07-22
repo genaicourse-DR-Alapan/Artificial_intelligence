@@ -1,5 +1,6 @@
 import { schedule } from "@/data/schedule";
 import { CalendarDays, FileText } from "lucide-react";
+import MaterialDialog from "@/components/ui/material-dialog";
 
 export default function WeeklyTimeline() {
   return (
@@ -51,10 +52,11 @@ export default function WeeklyTimeline() {
 
                 </div>
 
-                <button className="flex items-center gap-2 rounded-xl border border-slate-300 px-5 py-3 text-sm font-medium transition hover:bg-blue-50 hover:border-blue-500">
+                {/* <button className="flex items-center gap-2 rounded-xl border border-slate-300 px-5 py-3 text-sm font-medium transition hover:bg-blue-50 hover:border-blue-500">
                   <FileText size={18} />
                   {item.slides}
-                </button>
+                </button> */}
+                <MaterialDialog week={item.week} />
 
               </div>
             </div>
