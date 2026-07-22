@@ -7,6 +7,7 @@ import {
   BookOpen,
   Building2,
   Mail,
+  Users,
 } from "lucide-react";
 
 const cards = [
@@ -15,6 +16,13 @@ const cards = [
     title: "Instructor",
     value: course.instructor,
     subtitle: course.designation,
+  },
+
+  {
+    icon: Users,
+    title: "Teaching Assistant",
+    value: course.ta,
+    subtitle: "Teaching Assistant",
   },
 
   {
@@ -33,8 +41,17 @@ const cards = [
 
   {
     icon: Clock3,
-    title: "Schedule",
-    value: course.timing,
+    title: "Class Schedule",
+    value: (
+      <>
+        {course.timing.map((time) => (
+          // <div key={time}>{time}</div>
+          <div key={time} className="text-lg font-semibold leading-7">
+            {time}
+          </div>
+        ))}
+      </>
+    ),
     subtitle: course.semester,
   },
 
@@ -56,35 +73,24 @@ const cards = [
 export default function CourseInfo() {
   return (
     <section className="bg-white py-24">
-
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="mb-16 text-center">
-
           <p className="font-semibold uppercase tracking-widest text-blue-600">
-
             Course Overview
-
           </p>
 
           <h2 className="mt-4 text-5xl font-bold tracking-tight">
-
             Course Information
-
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-
             Everything students need to know before starting the course.
-
           </p>
-
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
           {cards.map((card) => {
-
             const Icon = card.icon;
 
             return (
@@ -93,37 +99,26 @@ export default function CourseInfo() {
                 className="group rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100">
-
                   <Icon className="text-blue-600" size={28} />
-
                 </div>
 
                 <h3 className="text-lg font-semibold text-slate-500">
-
                   {card.title}
-
                 </h3>
 
-                <p className="mt-4 text-2xl font-bold">
-
+                <div className="mt-4 text-2xl font-bold text-slate-900">
                   {card.value}
-
-                </p>
+                </div>
 
                 <p className="mt-4 text-slate-500">
-
                   {card.subtitle}
-
                 </p>
-
               </div>
             );
           })}
-
         </div>
 
       </div>
-
     </section>
   );
 }

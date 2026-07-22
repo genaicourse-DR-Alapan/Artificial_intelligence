@@ -6,9 +6,9 @@ import LearningJourney from "@/components/sections/LearningJourney";
 import Modules from "@/components/sections/Modules";
 import WeeklyTimeline from "@/components/sections/WeeklyTimeline";
 import FacultyAssessment from "@/components/sections/FacultyAssessment";
-import Resources from "@/components/sections/Resources";
+// import Resources from "@/components/sections/Resources";
 import Footer from "@/components/layout/Footer";
-import LearningOutcomes from "@/components/sections/LearningOutcomes";
+// import LearningOutcomes from "@/components/sections/LearningOutcomes";
 
 export default function Home() {
   return (
@@ -18,11 +18,11 @@ export default function Home() {
       <Vision />
       <CourseInfo />
       <LearningJourney />
-      <LearningOutcomes />
+      {/* <LearningOutcomes /> */}
       <Modules />
       <WeeklyTimeline />
       <FacultyAssessment />
-      <Resources />
+      {/* <Resources /> */}
       <Footer />
     </>
   );
