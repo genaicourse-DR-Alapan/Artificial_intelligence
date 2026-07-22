@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { basePath } from "@/lib/basePath";
 import { weeklyMaterials } from "@/data/materials";
 import {
   FileText,
@@ -99,7 +100,8 @@ export default function MaterialDialog({ week }: Props) {
                     <div className="flex gap-2">
 
                       <a
-                        href={m.file}
+                        // href={m.file}
+                        href={`${basePath}${m.file}`}
                         target="_blank"
                         className="rounded-lg bg-blue-600 px-3 py-2 text-white hover:bg-blue-700 flex items-center gap-2"
                       >
@@ -108,7 +110,7 @@ export default function MaterialDialog({ week }: Props) {
                       </a>
 
                       <a
-                        href={m.file}
+                        href={`${basePath}${m.file}`}
                         download
                         className="rounded-lg border px-3 py-2 hover:bg-slate-100 flex items-center gap-2"
                       >
