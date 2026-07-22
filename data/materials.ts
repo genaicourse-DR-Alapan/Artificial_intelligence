@@ -11,6 +11,11 @@ export const weeklyMaterials: Record<number, Material[]> = {
       type: "Lecture",
       file: "/materials/week1/lecture1-welcome.pdf",
     },
+     {
+      title: "Lecture 2 - Evolution of Artificial Intelligence",
+      type: "Lecture",
+      file: "/materials/week1/lecture2-ai-evolution.pdf",
+    },
   ],
 
   2: [],
